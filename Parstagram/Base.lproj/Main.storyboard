@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eyw-GS-f2g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -87,6 +87,61 @@
                     <view key="view" contentMode="scaleToFill" id="nVq-Cx-Sh9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-WS-ozK">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="492" id="Agf-eg-ng7" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="492"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Agf-eg-ng7" id="84w-GB-hB2">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="492"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8CS-AP-cQb">
+                                                    <rect key="frame" x="8" y="8" width="374" height="447"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="8CS-AP-cQb" secondAttribute="height" multiplier="374:447" id="Sgd-2X-zoH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCU-ym-BOT">
+                                                    <rect key="frame" x="8" y="463" width="45" height="20.333333333333314"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MC-Bn-rOf">
+                                                    <rect key="frame" x="61" y="463" width="321" height="20.333333333333314"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1MC-Bn-rOf" secondAttribute="bottom" constant="8" id="1Tp-Af-fpi"/>
+                                                <constraint firstItem="1MC-Bn-rOf" firstAttribute="top" secondItem="8CS-AP-cQb" secondAttribute="bottom" constant="8" id="EnG-pL-Hz1"/>
+                                                <constraint firstItem="QCU-ym-BOT" firstAttribute="centerY" secondItem="1MC-Bn-rOf" secondAttribute="centerY" id="Rcm-C4-RtM"/>
+                                                <constraint firstItem="1MC-Bn-rOf" firstAttribute="baseline" secondItem="QCU-ym-BOT" secondAttribute="firstBaseline" id="VbW-Sn-lWd"/>
+                                                <constraint firstItem="QCU-ym-BOT" firstAttribute="top" secondItem="8CS-AP-cQb" secondAttribute="bottom" constant="8" id="bwy-xa-cIB"/>
+                                                <constraint firstAttribute="trailing" secondItem="8CS-AP-cQb" secondAttribute="trailing" constant="8" id="cCx-hP-gZh"/>
+                                                <constraint firstItem="8CS-AP-cQb" firstAttribute="leading" secondItem="84w-GB-hB2" secondAttribute="leading" constant="8" id="jLj-DD-KHq"/>
+                                                <constraint firstAttribute="trailing" secondItem="1MC-Bn-rOf" secondAttribute="trailing" constant="8" id="lTt-jM-a68"/>
+                                                <constraint firstItem="1MC-Bn-rOf" firstAttribute="leading" secondItem="QCU-ym-BOT" secondAttribute="trailing" constant="8" id="mvD-x3-fOA"/>
+                                                <constraint firstItem="QCU-ym-BOT" firstAttribute="leading" secondItem="84w-GB-hB2" secondAttribute="leading" constant="8" id="ouu-4P-WDY"/>
+                                                <constraint firstItem="8CS-AP-cQb" firstAttribute="top" secondItem="84w-GB-hB2" secondAttribute="top" constant="8" id="sGc-US-Uw0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="1MC-Bn-rOf" id="bLI-Ya-3Nc"/>
+                                            <outlet property="photoView" destination="8CS-AP-cQb" id="8e8-nC-zzH"/>
+                                            <outlet property="usernameLabel" destination="QCU-ym-BOT" id="3ih-Eu-Ubu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2y2-cH-2KM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -98,6 +153,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Rrd-WS-ozK" id="M2U-Ze-5mW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Enp-dE-0Y7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
