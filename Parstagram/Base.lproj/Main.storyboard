@@ -165,7 +165,6 @@
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9eB-Jr-siN" secondAttribute="bottom" constant="8" id="kIW-bt-L09"/>
                                                 <constraint firstItem="0JG-Cj-acL" firstAttribute="leading" secondItem="w1U-Wx-sAs" secondAttribute="leading" constant="16" id="oB8-sL-ylc"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9eB-Jr-siN" secondAttribute="trailing" constant="8" id="pLy-YD-SPv"/>
-                                                <constraint firstItem="9eB-Jr-siN" firstAttribute="leading" secondItem="0JG-Cj-acL" secondAttribute="trailing" constant="8" id="tHC-1a-Kyg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -174,14 +173,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="cTO-tr-bjG">
-                                        <rect key="frame" x="0.0" y="572" width="390" height="37"/>
+                                        <rect key="frame" x="0.0" y="572" width="390" height="36.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cTO-tr-bjG" id="TeV-8D-dwn">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="37"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="36.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMx-BH-mMS">
-                                                    <rect key="frame" x="16" y="8" width="366" height="21"/>
+                                                    <rect key="frame" x="16" y="8.0000000000000018" width="366" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                     <nil key="highlightedColor"/>
@@ -201,13 +200,19 @@
                         <viewLayoutGuide key="safeArea" id="2y2-cH-2KM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="P5H-mZ-o8S">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" customizationIdentifier="" id="P5H-mZ-o8S">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="OtO-ec-dul">
                             <connections>
                                 <action selector="onLogoutButton:" destination="AvD-pG-ZoR" id="WST-FQ-Uc5"/>
                             </connections>
                         </barButtonItem>
+                        <centerItemGroups>
+                            <barButtonItemGroup customizationDisposition="fixed" id="2IK-t2-HIC">
+                                <barButtonItems>
+                                    <barButtonItem title="Item" id="2Ws-Tc-wgU"/>
+                                </barButtonItems>
+                            </barButtonItemGroup>
+                        </centerItemGroups>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="puO-hb-YDy">
                             <connections>
                                 <segue destination="Eyw-GS-f2g" kind="presentation" id="Mgx-za-ilL"/>
