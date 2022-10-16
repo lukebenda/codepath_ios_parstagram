@@ -196,6 +196,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-5q-BL5">
+                                <rect key="frame" x="84" y="50" width="224" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2y2-cH-2KM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -206,13 +210,6 @@
                                 <action selector="onLogoutButton:" destination="AvD-pG-ZoR" id="WST-FQ-Uc5"/>
                             </connections>
                         </barButtonItem>
-                        <centerItemGroups>
-                            <barButtonItemGroup customizationDisposition="fixed" id="2IK-t2-HIC">
-                                <barButtonItems>
-                                    <barButtonItem title="Item" id="2Ws-Tc-wgU"/>
-                                </barButtonItems>
-                            </barButtonItemGroup>
-                        </centerItemGroups>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="puO-hb-YDy">
                             <connections>
                                 <segue destination="Eyw-GS-f2g" kind="presentation" id="Mgx-za-ilL"/>
