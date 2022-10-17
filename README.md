@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='/Users/lucasbenda/Desktop/CodePath/iOS/instagram/Parstagram/insta2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/lukebenda/codepath_ios_parstagram/blob/24a23737565c55a1c950554f33a9d694c0e18000/insta2.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 ---
 # Parstagram - Part I
 
